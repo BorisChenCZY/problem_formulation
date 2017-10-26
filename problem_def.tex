@@ -1,0 +1,21 @@
+\documentclass{IEEEtran}% http://www.ctan.org/pkg/ieeetran
+\newtheorem{definition}{D\scriptsize EFINITION}
+\newtheorem{theorem}{Theorem}
+\newtheorem{problem}{P\scriptsize ROBLEM}
+\usepackage{amsmath}
+\begin{document}
+
+	\begin{definition}[Penalty(s)]
+		When applying an enhancement to change product p to p', there is a penalty function to measure the change, which is 
+		\[\text{Penalty}(p') = \frac{\sqrt{(p'-p)^2}}{|p|}\]
+	\end{definition}
+	
+	\begin{problem}[Find the enhancement strategy s to fulfill C with minimal penalty]
+        Given a target region C, where $C \supseteq c $, an enhanced p' should dominate p with the modified region $c'$ satisfies $C \subseteq c'$, while making least penalty. In other words, to:
+        \begin{align}
+        &min. \  Penalty(p')\\
+        &s.t.    \ Rank(C) \le k 
+        \end{align}
+	\end{problem}
+
+\end{document}​
